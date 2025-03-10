@@ -1,0 +1,237 @@
+/*헤더영역 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FDD3CE;
+    position: fixed;
+    height: 60px;
+    align-items: center;
+    /*피그마에서 중간 정렬을 하는 것이다!*/
+    /*헤더 안의 글자를 꾸며보기*/
+    font-family: "Pattaya", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    padding: 0 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-list {
+    display: inline;
+    font-size: 16px;
+}
+
+.nav-list:hover {
+    color: aliceblue;
+    font-weight: bold;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+    transition: color 0.2 ease-in-out;
+}
+
+#nav-contact {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 10px;
+    border: 1.3px solid #F17A6F;
+    text-decoration-line: none;
+    color: black;
+}
+
+#nav-contact:hover {
+    background-color: aliceblue;
+    font-weight: bold;
+}
+
+#nav-contact:active {
+    background-color: #c6e2eb;
+    border: 2px solid #6B2137;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*바디영역1-소개글*/
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+    background-color: #FDFDF5;
+    margin: 0px;
+}
+
+#context1 {
+    padding: 80px 120px;
+    /*간격값 gap이나 padding으로 주기*/
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    min-width: 800px;
+    background-color: #c6e2eb;
+    margin: 0 auto;
+}
+
+.title-set {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 버튼*/
+.button {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+
+.button a:active {
+    background-color: rgb(62, 133, 195);
+    border: 2px solid #6B2137;
+}
+
+.button a:hover {
+    background-color: #FDD3CE;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in;
+    transition: background-color 0.2 ease-in-out;
+    /*전환 애니메이션 종료 ease-in-out*/
+
+    /*가로 배수를 확대하겠다! 버튼의 크기가 굉장히 커짐*
+    (괄호 안의 크기만큼 커지고 작아진다. 자기자신 기준)*/
+}
+
+.button a {
+    display: flex;
+    padding: 12px 20px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    /* 버튼 색상 */
+    color: #000F33;
+    /* 글자색 */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 🔥바디영역2-포트폴리오*/
+
+.port01{
+    padding: 20px;
+}
+.project-container {
+    display: flex;
+    gap: 20px;
+    /* 🔥 각 프로젝트 간격 */
+    justify-content: center;
+    max-width: 1320px;
+    /* 🔥 가운데 정렬 */
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 40px 0;
+    /*가운데로 갈 수 있도록 설정하는 값*/
+}
+
+.project-item {
+    /* width: calc(50% - 20px); /* 🔥 한 줄에 2개씩 배치
+    text-align: center; */
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    flex-shrink: 0;
+    width: 480px;
+    height: 240px;
+    background-color: #F4F5F7;
+    border-radius: 20px;
+}
+
+.project-item img {
+    width: 240px;
+    /*맞추기 위해서*/
+    height: 100%;
+    /*박스안에 이미지를 다 채우기*/
+    object-fit: cover;
+    /*비율이 안맞으면 꽉 채워서 채워라*/
+    border-radius: 20px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.project-container a {
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: #c6e2eb;
+}
+
+.project-container a:hover {
+    background-color: #FDD3CE;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in;
+    transition: background-color 0.2 ease-in-out;
+}
+
+/* 🔥텍스트 컬러*/
+.text-color-primary {
+    color: #000F33;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.1px;
+}
+
+.text-color-default {
+    color: black;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+}
+
+.project-item {
+    color: 000F33;
+}
+
+.tool {
+    color: #F17A6F;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-name {
+    font-size: 20px;
+    font-weight: 600;
+    font-weight: bold;
+}
+
+.term {
+    font-size: 13px;
+    color: gray;
+}
+
+.script {
+    font-size: 14px;
+    color: gray;
+}
+
+/* 🔥 footer */
+footer {
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+    background-color: #FDFDF5;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FDD3CE;
+    position: fixed;
+    height: 60px;
+    align-items: center;
+    /*피그마에서 중간 정렬을 하는 것이다!*/
+    /*헤더 안의 글자를 꾸며보기*/
+    font-family: "Pattaya", sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    padding: 0 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-list {
+    display: inline;
+    font-size: 16px;
+}
+
+.nav-list:hover {
+    color: aliceblue;
+    font-weight: bold;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+    transition: color 0.2 ease-in-out;
+}
+
+#nav-contact {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 10px;
+    border: 1.3px solid #F17A6F;
+    text-decoration-line: none;
+    color: black;
+}
+
+#nav-contact:hover {
+    background-color: aliceblue;
+    font-weight: bold;
+}
+
+#nav-contact:active {
+    background-color: #c6e2eb;
+    border: 2px solid #6B2137;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*메인영역*/
+.container{
+    max-width: 1320px;
+    margin: auto;
+    display: flex; 
+    gap:40px;
+    padding:200px 0;
+    line-height: 1.2;
+
+}
+
+.profile{
+    width:320px;
+    height:auto;
+    object-fit:cover;
+    border-radius: 20px;   
+}
+.sub-heading{
+    font: size 8px;
+    color:rgb(94, 93, 93);
+    padding-bottom: 8px;
+}
+.text{
+    font: size 24px;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+.sns:hover{
+    font-weight:600;
+    color:#F17A6F;
+}
